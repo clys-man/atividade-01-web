@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Artigo</title>
+  <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <article>
+    <h1 class="article-title">Trabalho Computacional 1: Modelos de Regressão e Classificacão</h1>
+
+    <p class="article-info">Publicado por <span class="article-author">Clysman Alves</span> em <time
+        datetime="2024-03-21">21 de Março de
+        2024.</time></p>
+
+    <hr>
+
+    <section id="summary">
+      <h2 class="section-title">Sumário</h2>
+      <ol>
+        <li><a href="#introduction">Introdução</a></li>
+        <li><a href="#study-1">Trabalho de Regressão</a></li>
+        <li><a href="#study-2">Trabalho de Classificação</a></li>
+        <li><a href="#results">Resultados</a></li>
+        <li><a href="#references">Referências</a></li>
+        <li><a href="#implementations">Implementações</a></li>
+      </ol>
+    </section>
+
+    <section id="introduction">
+      <h2 class="section-title">Introdução</h2>
+      <p>Modelos de inteligência artificial são essenciais para aplicações que buscam emular o pensamento e a capacidade
+        de
+        decisão humana em sistemas computacionais. Eles representam abstrações complexas de como a inteligência pode ser
+        aplicada em problemas específicos, abrangendo desde algoritmos simples até redes neurais profundas. Esses
+        modelos são projetados para aprender com dados, identificar padrões e tomar decisões autônomas, características
+        cruciais exploradas no trabalho proposto. Composto por duas etapas, este trabalho utiliza conceitos de IA
+        baseados em modelos preditivos que aprendem por meio da minimização de uma função custo (loss function). Ambas
+        as etapas empregam o paradigma supervisionado, onde os modelos aprendem a partir de pares de amostra e valor
+        observado. Na primeira etapa, o foco está no desenvolvimento de um sistema para previsões quantitativas
+        (regressão), enquanto a segunda etapa se concentra no desenvolvimento de um sistema para previsões qualitativas
+        (classificação). Essas abordagens representam o alicerce para a construção de soluções inteligentes capazes de
+        lidar com uma variedade de desafios e cenários do mundo real.</p>
+    </section>
+
+    <section id="study-2">
+      <h2 class="section-title">Trabalho de Regressão</h2>
+      <p>Para entender o problema em questão, estamos lidando com um conjunto de dados do aerogerador, onde a variável
+        de entrada é a velocidade do vento em metros por segundo (m/s) e a variável de saída é a potência gerada em
+        quilowatts (kWatts). Nosso objetivo é implementar modelos de regressão sobre esse conjunto dados.</p>
+      <p>Realizamos a visualização inicial dos dados por meio de um gráfico de dispersão (Figura 1). Esse gráfico nos
+        permite observar a relação entre as variáveis regressoras (como a velocidade do vento) e as variáveis observadas
+        (como a potência gerada). No contexto da análise dos dados do aerogerador, foi decidido adotar um modelo linear
+        para investigar a relação entre a velocidade do vento e a potência gerada. A escolha por um modelo linear
+        baseia-se na suposição de que existe uma relação direta e proporcional entre essas duas variáveis, o que pode
+        ser representado por uma linha reta em um gráfico de dispersão.</p>
+    </section>
+
+    <section id="study-1">
+      <h2 class="section-title">Trabalho de Classificação</h2>
+      <p>Para o trabalho de classificação, o conjunto de informações será relacionado aos sinais de eletromiografia dos
+        músculos faciais. Especificamente, temos dados referentes ao Corrugador do Supercílio (Sensor 1) e ao Zigomático
+        Maior (Sensor 2). Este conjunto de dados é composto por 50.000 observações para ambos os sensores, distribuídas
+        em classes perfeitamente balanceadas, totalizando 10.000 observações para cada classe.</p>
+      <p>Os dados fornecidos consistem em 10 rodadas de aquisições dos sinais de EMG. Em cada rodada, as aquisições
+        seguem uma ordem específica: 1000 dados para o gesto neutro, 1000 dados para o gesto sorridente, 1000 dados para
+        o gesto aberto, 1000 dados para o gesto surpreso e 1000 dados para o gesto rabugento.</p>
+    </section>
+
+    <section id="results">
+      <h2 class="section-title">Resultados</h2>
+      <p>Portanto, este estudo destaca a eficácia dos modelos de regressão e classificação na análise de dados de
+        grandes conjuntos de dados. Ao empregar técnicas como mínimos quadrados ordinários, MQO regularizado e métodos
+        de classificação como k-vizinhos mais próximos e distância mínima do centroide, pudemos observar como esses
+        modelos podem ser aplicados com sucesso na previsão e classificação dos dados.
+      </p>
+
+      <p>Os resultados obtidos não apenas fornecem uma compreensão mais profunda de como realizar analises preditivas,
+        mas também destacam o potencial desses modelos para aplicações práticas em diversos âmbitos. Essas descobertas
+        têm implicações significativas para o desenvolvimento de sistemas de monitoramento e controle em diversas
+        áreas,
+        desde a saúde até a eficiência energética. No futuro, pesquisas adicionais podem explorar ainda mais essas
+        aplicações e aprimorar os modelos existentes para melhor atender às necessidades desses domínios.
+      </p>
+    </section>
+    <section id="implementations">
+      <h2 class="section-title">Implementações</h2>
+
+      <p>Disponivel em: <a
+          href="https://github.com/clys-man/regression-and-classification-models/blob/main/trabalho-av1.ipynb">Github</a>
+      </p>
+    </section>
+
+
+    <section id="references">
+      <h2 class="section-title">Referências</h2>
+
+      <p>[1] T. C. Carneiro, P. A. Rocha, P. C. Carvalho, and L. M. Fern ́andez-
+        Ram ́ırez, “Ridge regression ensemble of machine learning models applied
+        to solar and wind forecasting in brazil and spain,” Applied Energy, vol.
+        314, p. 118936, 2022.
+      </p>
+    </section>
+  </article>
+</body>
+
+</html>

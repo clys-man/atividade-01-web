@@ -1,0 +1,38 @@
+* {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.article-title {
+  color: green;
+  font-size: 56px;
+  margin-bottom: 8px;
+}
+
+.article-info {
+  font-style: italic;
+  color: green;
+  font-size: 16px;
+}
+
+.article-author {
+  font-weight: bold;
+}
+
+section {
+  margin-bottom: 32px;
+}
+
+section .section-title {
+  color: green;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+section p {
+  line-height: 22px;
+  font-size: 18px;
+}
+
+#summary ol {
+  list-style-type: upper-roman;
+}
